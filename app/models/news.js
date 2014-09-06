@@ -8,14 +8,14 @@ var News = DS.Model.extend({
 News.reopenClass({
 	FIXTURES: [
 		{
+			id: 2,
+			title: "MHS Programming Club New Meeting Day",
+			body: "MHS Programming Club will now meet on the Wednesdays of each week."
+		},
+		{
 			id: 1,
 			title: "My first post!",
 			body: "Wow exciting things are happening here."
-		},
-		{
-			id: 2,
-			title: "Ember has an interesting learning curve",
-			body: "Still trying to really understand all these generators."
 		}
 	]
 });
