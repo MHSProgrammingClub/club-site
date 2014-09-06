@@ -12,12 +12,12 @@ Project.reopenClass({
 	FIXTURES: [
 		{
 			id: 1,
-			title: "MHS Programming Website",
+			name: "MHS Programming Website",
 			description: "The project of actually making the MHS Programming Club website. Built using Ember"
 		},
 		{
 			id: 2,
-			title: "Git Basics",
+			name: "Git Basics",
 			description: "A guide to the basics of git that will get you up and running in no time."
 		}
 	]
