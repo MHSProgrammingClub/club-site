@@ -10,4 +10,8 @@ app.get('/*', function(req, res){
   res.sendFile(__dirname + '/dist/index.html');
 });
 
+app.get('/robots.txt', function(req, res) {
+	res.sendFile(__dirname + '/dist/robots.txt');
+});
+
 app.listen(port);

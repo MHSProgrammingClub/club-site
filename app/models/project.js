@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 var Project = DS.Model.extend({
   name: DS.attr('string'),
+  slug: DS.attr('string'),
   description: DS.attr('string'),
   leaders: DS.hasMany('person'),
   contributors: DS.hasMany('person'),
