@@ -1,6 +1,6 @@
 <ul>
 	{{#each}}
-		<h1>{{name}}</h1>
+		<h1>{{#link-to 'projects.show' id}}{{name}}{{/link-to}}</h1>
 		<p class="lead">{{description}}</p>
 	{{/each}}
 </ul>

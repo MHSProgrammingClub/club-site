@@ -4,7 +4,9 @@ var News = DS.Model.extend({
   title: DS.attr('string'),
   body: DS.attr('string'),
   date: DS.attr('date'),
-  slug: DS.attr('string')
+	slug: function() {
+		return this.get('name').toLowerCase().replace(/\s/g, '-');
+	}.property('name')
 });
 
 News.reopenClass({
