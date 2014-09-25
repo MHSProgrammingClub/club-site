@@ -10,6 +10,13 @@ div.below-nav {
   padding-top: 50px;
 }
 
+div.user {
+  width: 500px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 img.avatar {
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
