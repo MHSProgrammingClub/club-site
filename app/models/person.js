@@ -4,9 +4,7 @@ var Person = DS.Model.extend({
 	name: DS.attr('string'),
   login: DS.attr('string'),
   avatar_url: DS.attr('string'),
-  url: function() {
-  	return "https://github.com/" + this.get('login');
-  }
+  html_url: DS.attr('string')
 });
 
 export default Person;

@@ -1,20 +1,2 @@
-<h1>{{name}}</h1>
+<h1><a {{bind-attr href='html_url'}}>{{name}}</a></h1>
 <p class="lead">{{description}}</p>
-<h3>Skills:</h3>
-<ul>
-	{{#each skill in skills}}
-		<li>{{skill.name}}</li>
-	{{/each}}
-</ul>
-<h3>Leaders:</h3>
-<ul>
-	{{#each leader in leaders}}
-		<li>{{#link-to 'people.show' leader.id}}{{leader.name}}{{/link-to}}</li>
-	{{/each}}
-</ul>
-<h3>Contributors:</h3>
-<ul>
-	{{#each contributor in contributors}}
-		<li>{{#link-to 'people.show' contributor.id}}{{contributor.name}}{{/link-to}}</li>
-	{{/each}}
-</ul>
