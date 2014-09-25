@@ -16,7 +16,9 @@ Project.reopenClass({
 		{
 			id: 1,
 			name: "MHS Programming Website",
-			description: "The project of actually making the MHS Programming Club website. Built using Ember"
+			description: "The project of actually making the MHS Programming Club website. Built using Ember",
+			contributors: [1],
+			skills: [3]
 		},
 		{
 			id: 2,

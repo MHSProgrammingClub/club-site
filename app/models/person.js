@@ -21,7 +21,7 @@ Person.reopenClass({
 			name: "Chris Olszewski",
 			github: "chris-olszewski",
 			leader: [1, 2],
-			skills: [1, 2]
+			skills: [1, 2, 3]
 		}
 	]
 });
