@@ -1,6 +1,6 @@
 <ul>
 	{{#each}}
-		<h1>{{#link-to 'people.show' id}}{{name}}{{/link-to}}</h1>
-		<p class="lead">{{github}}</p>
+		<h1>{{#link-to 'people.show' login}}{{login}}{{/link-to}}</h1>
+		<img class="avatar" {{bind-attr src=avatar_url}}>
 	{{/each}}
 </ul>

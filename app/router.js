@@ -10,7 +10,7 @@ Router.map(function() {
   	this.route('show', { path: '/:project_id' });
   });
   this.resource('people', function() {
-  	this.route('show', { path: '/:person_id' });
+  	this.route('show', { path: '/:login' });
   });
 });
 

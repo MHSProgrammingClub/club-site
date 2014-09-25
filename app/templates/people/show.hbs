@@ -1,18 +1,4 @@
 <h1>{{name}}</h1>
-<a {{bind-attr href='githubURL'}}>{{github}}</a>
-<h3>Skills:</h3>
-<ul>
-	{{#each skill in skills}}
-		<li>{{skill.name}}</li>
-	{{/each}}
-</ul>
-<h3>Projects:</h3>
-<ul>
-	{{#each project in leader}}
-		<li>{{#link-to 'projects.show' project.id}}{{project.name}}{{/link-to}}</li>
-	{{/each}}
-	{{#each project in contributor}}
-		<li>{{#link-to 'projects.show' project.id}}{{project.name}}{{/link-to}}</li>
-	{{/each}}
-</ul>
+<a {{bind-attr href='url'}}>{{login}}</a>
+<img class="avatar" {{bind-attr src='avatar_url'}}>
 
