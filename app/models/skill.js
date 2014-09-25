@@ -2,6 +2,8 @@ import DS from 'ember-data';
 
 var Skill = DS.Model.extend({
 	name: DS.attr('string'),
+	projects: DS.hasMany('project', { async: true }),
+	people: DS.hasMany('person', {async: true }),
 	slug: function() {
 		return this.get('name').toLowerCase().replace(/\s/g, '-');
 	}.property('name')

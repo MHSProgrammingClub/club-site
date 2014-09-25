@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 	model: function(params) {
-		return Ember.$.getJSON('https://api.github.com/users/' + params.login);
+		return this.store.find('skill', params.skill_id);
 	}
 });

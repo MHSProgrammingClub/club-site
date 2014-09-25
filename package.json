@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build": "ember build",
+    "build": "ember build --environment production",
     "test": "ember test"
   },
   "repository": "https://github.com/stefanpenner/ember-cli",
